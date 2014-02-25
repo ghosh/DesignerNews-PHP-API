@@ -2,7 +2,7 @@
 
 ## About
 
-A simple php wrapper for the Designer News API.
+A simple php wrapper for the Designer News API. Thats it.
 
 
 ## Requirements
@@ -11,28 +11,44 @@ A simple php wrapper for the Designer News API.
 * cURL
 * A valid Designer News Access Token
 
-## Getting Started
 
+## oAuth 2
 This library assumes that you have already acquired a valid Access Token using your preferred oAuth library.
 
 >Please note that as of this writing, the Designer News API only supports ClientCredentials and Password Grant Types.
 
+## Getting Started
+You can either download the latest version from the repo, or alternatively install it as a dependency with Composer.
+
+### Installing with Composer
+```
+
+{
+    "require": {
+        "ghosh/designernews-php-api": "1.*"
+    }
+}
+```
+
+Then run `composer.phar install` from your command line in your application root folder.
+
 ### Instantiating the class
+```
 
-	<?php
-	    require_once ‘src/DesignerNews.php’;
+$config = array(
+	"accessToken"  => "YOUR_ACCESS_TOKEN"
+);
 
-		$config = array(
-			"accessToken"  => “YOUR_ACCESS_TOKEN”
-		);
+try
+{
+	$DN = new DesignerNews($config);
+}
+catch (Exception $e)
+{
+	echo $e->getMessage();
+}
+```
 
-		try {
-			$DN = new DesignerNews($config);
-		} catch(Exception $e){
-			echo $e->getMessage();
-		}
-
-	?>
 
 This creates a new instance of the Designer News API class and assigns it to the `$DN` handle. Its recommended to wrap this in a `try`/`catch` block to handle any errors that may arise.
 
@@ -46,25 +62,37 @@ This creates a new instance of the Designer News API class and assigns it to the
 The wrapper includes convenient methods used to perform HTTP requests on behalf of the authenticated user. Below you will find a list of all available methods.
 
 ### User
-	$DN->me();
+```
+
+$DN->me();
+```
 
 ### Stories
-	$DN->getStory($id);
-	$DN->upvoteStory($id);
-	$DN->commentOnStory($id, $comment);
-	$DN->getTopStories();
-	$DN->getRecentStories();
-	$DN->searchForStory($queryString);
+```
+
+$DN->getStory($id);
+$DN->upvoteStory($id);
+$DN->commentOnStory($id, $comment);
+$DN->getTopStories();
+$DN->getRecentStories();
+$DN->searchForStory($queryString);
+```
 
 ### Comments
-	$DN->getComment($id);
-	$DN->upvoteComment($id);
-	$DN->replyToComment($id, $reply);
+```
+
+$DN->getComment($id);
+$DN->upvoteComment($id);
+$DN->replyToComment($id, $reply);
+```
 
 ### MOTD (Message of the day)
-	$DN->getMOTD();
-	$DN->upvoteMOTD();
-	$DN->downvoteMOTD();
+```
+
+$DN->getMOTD();
+$DN->upvoteMOTD();
+$DN->downvoteMOTD();
+```
 
 
 ## Response Type
@@ -74,15 +102,18 @@ All responses from the Designer News API PHP Wrapper are returned as PHP objects
 
 In the near future I hope to add the following functionality to the wrapper:
 
-* Composer Support
+* ~~Composer Support~~ (Added in v1.0)
 * More detailed exception handling
 * Built in oath client
 
 ## Feedback and Bugs
 
-Feel free to open a [new issue](https://github.com/Ghosh/DesignerNews-PHP-API/issues) here on github for any bug you may have come across or a feature which you would like added.
+Feel free to open a [new issue](https://github.com/Ghosh/DesignerNews-PHP-API/issues) here on github for any bug you may have come across or a feature which you would like added. Pull requests are most welcomed.
 
 ## History
+##### Designer News 1.0 - 21/11/2011
+* `release` - Initial Public Release
+* `feature` - Added Packagist support
 
-##### Designer News 1.0 - 20/11/2011
-* `release` - Initial Release
+##### Designer News 0.5 - 20/11/2011
+* `release` - Public Beta Release

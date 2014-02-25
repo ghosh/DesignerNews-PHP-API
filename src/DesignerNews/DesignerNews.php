@@ -12,6 +12,8 @@
  * @license MIT http://opensource.org/licenses/MIT
  */
 
+namespace DesignerNews;
+
 class DesignerNews
 {
 

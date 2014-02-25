@@ -1,0 +1,28 @@
+{
+    "name": "ghosh/designernews-php-api",
+    "description": "A simple php wrapper for the Designer News API.",
+    "keywords": ["Designer News", "php", "api"],
+    "homepage": "https://github.com/Ghosh/DesignerNews-PHP-API",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Indrashish Ghosh",
+            "email": "mail@indrashishghosh.com",
+            "homepage": "http://www.indrashishghosh.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+            "email": "mail@indrashishghosh.com",
+            "issues": "https://github.com/Ghosh/DesignerNews-PHP-API/issues"
+    },
+    "autoload": {
+        "psr-0": {
+            "DesignerNews": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.2.0"
+    }
+}
