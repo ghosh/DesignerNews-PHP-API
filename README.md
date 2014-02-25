@@ -22,7 +22,6 @@ You can either download the latest version from the repo, or alternatively insta
 
 ### Installing with Composer
 ```
-
 {
     "require": {
         "ghosh/designernews-php-api": "1.*"
@@ -33,8 +32,7 @@ You can either download the latest version from the repo, or alternatively insta
 Then run `composer.phar install` from your command line in your application root folder.
 
 ### Instantiating the class
-```
-
+```php
 $config = array(
 	"accessToken"  => "YOUR_ACCESS_TOKEN"
 );
