@@ -87,31 +87,19 @@ class DesignerNews
     }
   }
 
-  /*
-  |------------------------------------------------------------------------
-  | User
-  |------------------------------------------------------------------------
-  */
 
-	/**
-	 * Returns details for the authorized user.
-	 *
-	 * @return object
+  /**
+   * Returns details for the authorized user.
+   *
+   * @return object
    *
    * @access public
    * @see DesignerNews::_makeRequest()
-	 */
+   */
 	public function getUser()
 	{
     return $this->_makeRequest('/me', 'GET');
 	}
-
-
-  /*
-  |------------------------------------------------------------------------
-  | Stories
-  |------------------------------------------------------------------------
-  */
 
 
   /**
@@ -187,6 +175,7 @@ class DesignerNews
    *
    * @access public
    * @see DesignerNews::_makeRequest()
+   * @see DesignerNews::_formatComment()
    * @see DesignerNews::_ValidateID()
    */
   public function commentOnStory($id, $comment)
@@ -214,14 +203,6 @@ class DesignerNews
     return $this->_makeRequest('/stories/search', 'GET', $params);
   }
 
-
-
-
-  /*
-  |------------------------------------------------------------------------
-  | Comments
-  |------------------------------------------------------------------------
-  */
 
   /**
    * Returns details for a comment specified by ID.
@@ -268,6 +249,7 @@ class DesignerNews
    *
    * @access public
    * @see DesignerNews::_makeRequest()
+   * @see DesignerNews::_formatComment()
    * @see DesignerNews::_ValidateID()
    */
   public function replyToComment($id, $comment)
@@ -279,12 +261,6 @@ class DesignerNews
   }
 
 
-
-  /*
-  |------------------------------------------------------------------------
-  | MOTD
-  |------------------------------------------------------------------------
-  */
 
   /**
    * Returns information for the current MOTD (message of the day).
@@ -326,13 +302,6 @@ class DesignerNews
   {
     return $this->_makeRequest('/motd/downvote', 'POST');
   }
-
-
-  /*
-  |------------------------------------------------------------------------
-  | Private Methods
-  |------------------------------------------------------------------------
-  */
 
 
   /**
