@@ -21,7 +21,7 @@ This library assumes that you have already acquired a valid Access Token using y
 You can either download the latest version from the repo, or alternatively install it as a dependency with Composer.
 
 ### Installing with Composer
-```
+```json
 {
     "require": {
         "ghosh/designernews-php-api": "1.*"
@@ -60,14 +60,12 @@ This creates a new instance of the Designer News API class and assigns it to the
 The wrapper includes convenient methods used to perform HTTP requests on behalf of the authenticated user. Below you will find a list of all available methods.
 
 ### User
-```
-
+```php
 $DN->me();
 ```
 
 ### Stories
-```
-
+```php
 $DN->getStory($id);
 $DN->upvoteStory($id);
 $DN->commentOnStory($id, $comment);
@@ -77,16 +75,14 @@ $DN->searchForStory($queryString);
 ```
 
 ### Comments
-```
-
+```php
 $DN->getComment($id);
 $DN->upvoteComment($id);
 $DN->replyToComment($id, $reply);
 ```
 
 ### MOTD (Message of the day)
-```
-
+```php
 $DN->getMOTD();
 $DN->upvoteMOTD();
 $DN->downvoteMOTD();
