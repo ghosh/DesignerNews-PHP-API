@@ -105,9 +105,9 @@ In the near future I hope to add the following functionality to the wrapper:
 Feel free to open a [new issue](https://github.com/Ghosh/DesignerNews-PHP-API/issues) here on github for any bug you may have come across or a feature which you would like added. Pull requests are most welcomed.
 
 ## History
-##### Designer News 1.0 - 21/11/2011
+##### Designer News 1.0 - 21/02/2014
 * `release` - Initial Public Release
 * `feature` - Added Packagist support
 
-##### Designer News 0.5 - 20/11/2011
+##### Designer News 0.5 - 20/02/2014
 * `release` - Public Beta Release
