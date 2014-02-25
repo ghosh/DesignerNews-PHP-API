@@ -52,13 +52,6 @@ class DesignerNews
 
 
 
-
-  /*
-  |------------------------------------------------------------------------
-  | Constructor
-  |------------------------------------------------------------------------
-  */
-
   /**
    * Class constructor
    *
@@ -96,10 +89,10 @@ class DesignerNews
    * @access public
    * @see DesignerNews::_makeRequest()
    */
-	public function getUser()
-	{
+  public function getUser()
+  {
     return $this->_makeRequest('/me', 'GET');
-	}
+  }
 
 
   /**
@@ -327,7 +320,6 @@ class DesignerNews
    *
    * @param string $comment
    * @return string $comment
-   * @throws Exception
    *
    * @access private
    */

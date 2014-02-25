@@ -13,7 +13,7 @@ A simple php wrapper for the Designer News API.
 
 ## Getting Started
 
-This library assumes that you have already acquired a valid Access Token using  your preferred oAuth library.
+This library assumes that you have already acquired a valid Access Token using your preferred oAuth library.
 
 >Please note that as of this writing, the Designer News API only supports ClientCredentials and Password Grant Types.
 
@@ -43,7 +43,7 @@ This creates a new instance of the Designer News API class and assigns it to the
 
 ## Available Methods
 
-The wrapper includes convenient methods used to perform HTTP requests on behalf of the authenticated user. Below you will find a list of all available methods along with a short description.
+The wrapper includes convenient methods used to perform HTTP requests on behalf of the authenticated user. Below you will find a list of all available methods.
 
 ### User
 	$DN->me();
@@ -68,11 +68,11 @@ The wrapper includes convenient methods used to perform HTTP requests on behalf 
 
 
 ## Response Type
-All responses from the Designer News API PHP Wrapper are returned as PHP objects, so you can act on properties directly.
+All responses from the Designer News API PHP Wrapper are returned as PHP objects.
 
 ## Road Map
 
-In the future I hope to add the following functionality to the wrapper:
+In the near future I hope to add the following functionality to the wrapper:
 
 * Composer Support
 * More detailed exception handling
@@ -86,12 +86,3 @@ Feel free to open a [new issue](https://github.com/Ghosh/DesignerNews-PHP-API/is
 
 ##### Designer News 1.0 - 20/11/2011
 * `release` - Initial Release
-
-## License
-Copyright (c) 2014 Indrashish Ghosh
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
