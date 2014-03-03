@@ -24,7 +24,7 @@ You can either download the latest version from the repo, or alternatively insta
 ```json
 {
     "require": {
-        "ghosh/designernews-php-api": "1.*"
+        "ghosh/designernews-php-api": "~1.0"
     }
 }
 ```
