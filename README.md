@@ -7,7 +7,7 @@ A simple php wrapper for the Designer News API. Thats it.
 
 ## Requirements
 
-* PHP 5.2.x or higher
+* PHP 5.3.x or higher
 * cURL
 * A valid Designer News Access Token
 
