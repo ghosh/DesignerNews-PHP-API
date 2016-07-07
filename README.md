@@ -2,7 +2,7 @@
 
 ## About
 
-A simple php wrapper for the Designer News API. Thats it.
+A simple php wrapper for the Designer News API.
 
 
 ## Requirements
