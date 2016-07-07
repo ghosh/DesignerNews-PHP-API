@@ -95,10 +95,9 @@ All responses from the Designer News API PHP Wrapper are returned as PHP objects
 ## Road Map
 
 In the near future I hope to add the following functionality to the wrapper:
-
-* ~~Composer Support~~ (Added in v1.0)
-* More detailed exception handling
-* Built in oath client
+- [x] Composer support
+- [ ] Detailed exception handling
+- [ ] Built in oath client
 
 ## Feedback and Bugs
 
