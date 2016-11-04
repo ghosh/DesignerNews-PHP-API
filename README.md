@@ -92,21 +92,15 @@ $DN->downvoteMOTD();
 ## Response Type
 All responses from the Designer News API PHP Wrapper are returned as PHP objects.
 
-## Road Map
-
-In the near future I hope to add the following functionality to the wrapper:
-- [x] Composer support
-- [ ] Detailed exception handling
-- [ ] Built in oath client
 
 ## Feedback and Bugs
 
 Feel free to open a [new issue](https://github.com/Ghosh/DesignerNews-PHP-API/issues) here on github for any bug you may have come across or a feature which you would like added. Pull requests are most welcomed.
 
 ## History
-##### Designer News 1.0 - 21/02/2014
+##### Designer News 1.0
 * `release` - Initial Public Release
 * `feature` - Added Packagist support
 
-##### Designer News 0.5 - 20/02/2014
+##### Designer News 0.1
 * `release` - Public Beta Release
